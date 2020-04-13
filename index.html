@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jednoręki bandyta</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        section h1 {
+            margin: 30px 0;
+            font-size: 40px;
+        }
+
+        section div {
+            display: inline-block;
+            margin: 40px 20px;
+            background-color: gray;
+            width: 25%;
+            height: 25vh;
+        }
+
+        div.red {
+            background-color: tomato;
+        }
+
+        div.blue {
+            background-color: royalblue;
+        }
+
+        div.green {
+            background-color: yellowgreen;
+        }
+
+        form input {
+            line-height: 40px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        form button {
+            margin-left: 50px;
+            line-height: 50px;
+            background-color: #2c3e50;
+            color: white;
+            padding: 0 30px;
+            font-size: 30px;
+            transition: 0.5s;
+            border: none;
+        }
+
+        form button:hover {
+            background-color: black;
+        }
+
+        h2 {
+            margin: 50px;
+            font-weight: normal;
+        }
+
+        h2 span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="game">
+        <h1>Jednoręki Bandyta</h1>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+    <section class="play">
+        <form>
+            <input type="number" placeholder="Podaj stawkę" id="bid">
+            <button id="start">Zakręć</button>
+        </form>
+    </section>
+    <section class="stats">
+        <h2>Twoje środki przed kolejną grą to: <span class="cash">100</span>$</h2>
+        <h2><span class="result"></span> Za tobą <span class="gameNumber">0</span> gier, w tym <span
+                class="wins">0</span> wygranych i <span class="loses">0</span> przegranych</h2>
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>
